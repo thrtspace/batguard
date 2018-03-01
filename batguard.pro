@@ -26,10 +26,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    camera_pg.cpp
+    camera_pg.cpp \
+    edge_checker.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    edge_checker.h
 
 FORMS += \
         mainwindow.ui

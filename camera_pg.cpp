@@ -279,7 +279,7 @@ void* camera_image_thread(void* pdata)
     {
         spinImage hResultImage = NULL;
 
-        printf("g_quit_flag =%d\n", g_quit_flag);
+        //printf("g_quit_flag =%d\n", g_quit_flag);
         if(g_quit_flag != 0)
             break;
 
@@ -401,7 +401,7 @@ void* camera_image_thread(void* pdata)
         spinImageGetBufferSize(hConvertedImage, &size);
         // printf("size = %lu\n", size);
         acq_image *image = g_images;
-        for(int i=0; i< g_images_count; ++i)
+        for(int i=0; i< g_images_count -1; ++i)
         {
             if(image->ready == 1)
             {

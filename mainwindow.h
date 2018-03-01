@@ -18,6 +18,8 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+    void reset_slide();
+
 protected:
     void resizeEvent(QResizeEvent *event);
 
@@ -34,6 +36,15 @@ private slots:
 
     void process_batcheck();
 
+    void adjust_view();
+    void process_camera();
+
+    void on_verticalSlider_2_sliderReleased();
+
+    void on_actionCheckTop_triggered();
+
+    void on_actionCheckCover_triggered();
+
 private:
     Ui::MainWindow *ui;
     QGraphicsScene *m_scene;
@@ -46,6 +57,9 @@ private:
     uchar* m_image_mono;
     int m_image_width;
     int m_image_height;
+
+    uchar* m_camera_mono;
+    std::vector<QRect> m_results;
 
 };
 
