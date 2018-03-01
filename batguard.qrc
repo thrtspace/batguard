@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/ico">
+        <file alias="start">res/media-play-32.png</file>
+        <file alias="stop">res/media-stop-32.png</file>
+        <file alias="logo">res/qt-logo.ico</file>
+        <file alias="check">res/Bluebubble.svg</file>
+    </qresource>
+</RCC>
